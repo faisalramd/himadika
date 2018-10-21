@@ -31,12 +31,6 @@
 		 	echo "\n\t\t";
 			?><link rel="stylesheet" href="<?php echo $file; ?>" type="text/css" /><?php
 		} echo "\n\t";
-
-		foreach($js as $file){
-				echo "\n\t\t";
-				?><script src="<?php echo $file; ?>"></script><?php
-		} echo "\n\t";
-
 		/** -- to here -- */
 	?>
 
@@ -44,7 +38,8 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/themes/default/css/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/themes/default/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/themes/default/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/themes/default/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/themes/default/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/themes/default/css/vegas.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/themes/default/css/style.css">
   <!-- =======================================================
     Theme Name: Baker
@@ -119,6 +114,12 @@
     </footer>
     <!--/ FOOTER -->
   </div>
+  <?php
+    foreach($js as $file){
+        echo "\n\t\t";
+        ?><script src="<?php echo $file; ?>"></script><?php
+    } echo "\n\t";
+  ?>
   <script src="<?php echo base_url(); ?>assets/themes/default/js/custom.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-<div class="container">
+<div id="home-container" class="container">
 	<div class="row">
 	  <div class="banner-info text-center wow fadeIn delay-05s">
 	    <h1 class="bnr-title">We are at ba<span>ker</span></h1>
